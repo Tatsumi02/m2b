@@ -15,4 +15,22 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    /**
+     *@Route("/open-your-file", name="your_file")
+     */
+    public function your_file(){
+
+        return $this->render('home/open_your_file.html.twig',[]);
+    }
+
+    /**
+     * @Route("/etape-2", name="step2")
+     */
+    public function step2(){
+        
+        return $this->render('home/step2.html.twig');
+    }
+
 }
+ 

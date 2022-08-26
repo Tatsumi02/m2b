@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<br><br><br>
+    <div class="container">
+        <h3>FORMULAIRE D’ENTRETIEN D’OUVERTURE D’UN DOSSIER </h3> <br>
+        <span id="z_notification"></span>
+        <div id="cont">
+        <p>
+            Bonjour, Dans le cadre de l’élaboration de votre Business Plan, nous vous prions de bien vouloir renseigner le présent formulaire. 
+            Globalement notre entretien est fait dans le but de recueillir des informations qui nous serons utiles pour la mission qui nous a été confiée. Pour nous Il n’y a pas de bonne ou de mauvaise réponse, seule votre opinion compte car elle nous permettra de nous faire une idée de l’état actuel de vos connaissances, afin d’orienter nos actions futurs. Si vous ne vous sentez pas concerné par un point, veuillez simplement ne pas y répondre.
+            <br><br>
+            <button class="btn btn-primary btn-lg" id="start">Commençons <span class="fa fa-star"></span></button>
+         </p>
+        </div>
+
+
+         <div id="form_view" class="col-md-8" style="display: none;">
+           <form id="form" action="" method="post">
+                <input type="text" name="entrepreneur" id="entrepreneur" class="form-control" placeholder="Entrepreneur" /> <br>
+                <input type="text" name="titre_projet" id="titre_projet" class="form-control" placeholder="titre du projet"> <br>
+                <input type="text" name="contact" id="contact" class="form-control" placeholder="contact"><br>
+                <input type="text" name="profession" id="profession" class="form-control" placeholder="Profession" />
+                <br>
+                <label for="dl">Date de lancement</label>
+                <input type="date" name="date_lancement" id="dl" class="form-control" /> <br>
+                <button class="btn btn-primary" type="button" id="step1">Suivant <span class="fa fa-next"></span></button>
+           </form>
+         </div>
+    </div>
+    <br><br><br>
+    <input type="hidden" name="" id="start_step1" value="{{path('step1')}}" />
+    <input type="hidden" name="" id="next" value="{{path('step2')}}" />
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{asset('assets/js/app/files.js')}}"></script>
+{% endblock %}

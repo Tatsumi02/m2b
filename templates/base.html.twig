@@ -35,7 +35,7 @@
     <!-- preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-thumb">
-            <img src="assets/images/propeller.png" alt="image">
+            <img src="{{asset('assets/images/propeller.png')}}" alt="image">
         </div>
     </div>
 
@@ -97,7 +97,7 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <a class="site-logo site-title" href=""><img src="{{asset('assets/images/com/Fond.gif')}}" style="height: 80px; width:100px;" alt="site-logo"></a>
+                    <a class="site-logo site-title" href="{{path('app_home')}}"><img src="{{asset('assets/images/com/Fond.gif')}}" style="height: 80px; width:100px;" alt="site-logo"></a>
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fas fa-bars"></span>
                     </button>
@@ -143,7 +143,7 @@
                                 <li><a href="">Contact</a></li>
                             </ul>
                             <div class="header-action d-flex flex-wrap align-items-center">
-                                <a href="" class="cmn-btn">Open your file</a>
+                                <a href="{{path('your_file')}}" class="cmn-btn">Open your file</a>
                             </div>                    
                         </div>
                     </nav>
@@ -155,6 +155,7 @@
 
 
     <!-- banner-section start -->
+    {% block body %} 
     <section class="banner-section banner-section--style">
         <div class="banner-slider">
             <div class="swiper-wrapper">
@@ -171,7 +172,7 @@
                                     <p>You have an idea for a business project; you are a startup or a company; we are here to support you in realizing your business plan, the search for partners, and financing.</p>
                                     <div class="btn-area">
                                         <a href="" class="cmn-btn">contact us</a>
-                                        <a href="" class="cmn-btn-active">Open your file</a>
+                                        <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +194,7 @@
                                     <p>Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier.</p>
                                     <div class="btn-area">
                                         <a href="" class="cmn-btn">contact us</a>
-                                        <a href="" class="cmn-btn-active">Open your file</a>
+                                        <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
                                     </div>
                                 </div>
                             </div>
@@ -690,6 +691,7 @@
     </section>
     <!-- blog-section end -->
 
+    {% endblock %}
 
     <!-- footer-section start -->
     <footer class="footer-section pt-120 pb-120">
@@ -789,6 +791,8 @@
 <script src="{{asset('assets/js/jquery.paroller.min.js')}}"></script>
 <!-- main -->
 <script src="{{asset('assets/js/main.js')}}"></script>
+
+{% block javascript %}{% endblock %}
 
 
 </body>

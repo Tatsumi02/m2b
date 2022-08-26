@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Etape 2{% endblock %}
+
+{% block body %}
+<br><br><br>
+    <div class="container">
+        <h3>FORMULAIRE D’ENTRETIEN D’OUVERTURE D’UN DOSSIER(2/3) </h3> <br>
+        <p>
+            Faites nous part des éléments déterminants qui vous ont amené à prendre la décision d’entreprendre.
+         </p>
+         <hr>
+
+
+         <div class="col-md-8">
+           <form id="form" action="" method="post">
+                <input type="text" name="motivation" id="motivation"  placeholder="motivation" required /> <br><br>
+               <b> principaux intérêts: </b> <br>
+                
+                <label for="c1" style="background-color: rgb(243, 241, 241); padding:2%;">
+                    <input type="checkbox" id="c1" name="c1" value="Guide personnel de l’entrepreneur" />
+                    Guide personnel de l’entrepreneur (Vision de l’entrepreneur et gestion du projet)
+                </label>
+
+                <label for="c3" style="background-color: rgb(243, 241, 241); padding:2%;">
+                    <input type="checkbox" id="c3" name="c3" value="Demande de financement bancaire" />
+                    Recherche de partenaires (associés, personnel clé, client important, fournisseur exclusif, etc.)
+                </label>
+
+                <label for="c2" style="background-color: rgb(243, 241, 241); padding:2%;">
+                    <input type="checkbox" id="c2" name="c2" value="Demande de financement bancaire" />
+                    Demande de financement bancaire
+                </label>
+
+                <label for="c4" style="background-color: rgb(243, 241, 241); padding:2%;">
+                    <input type="checkbox" id="c4" name="c4" value="Demande de financement bancaire" />
+                    Développement des activités (Croissance de l’entreprise)
+                </label>
+
+                <br>
+                <button class="btn btn-primary" type="button" id="step1">Suivant <span class="fa fa-next"></span></button>
+           </form>
+         </div>
+    </div>
+    <br><br><br>
+    <input type="hidden" name="" id="start_step1" value="{{path('step1')}}" />
+    <input type="hidden" name="" id="next" value="{{path('step2')}}" />
+{% endblock %}
+
+{% block javascript %}
+    {# <script src="{{asset('assets/js/app/files.js')}}"></script> #}
+{% endblock %}
