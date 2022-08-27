@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ContactsRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ContactsRepository::class)]
@@ -27,10 +28,13 @@ class Contacts
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $adresse = null;
-
+    
     #[ORM\Column]
     private ?\DateTimeImmutable $create_at = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $message = null;
+     
     public function getId(): ?int
     {
         return $this->id;
@@ -104,6 +108,18 @@ class Contacts
     public function setCreateAt(\DateTimeImmutable $create_at): self
     {
         $this->create_at = $create_at;
+
+        return $this;
+    }
+
+    public function getMessage(): ?string
+    {
+        return $this->message;
+    }
+
+    public function setMessage(?string $message): self
+    {
+        $this->message = $message;
 
         return $this;
     }

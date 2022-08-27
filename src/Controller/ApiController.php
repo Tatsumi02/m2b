@@ -26,15 +26,25 @@ class ApiController extends AbstractController
     public function save_step1(Request $request, FilesRepository $filesRepo, ){
 
         $datas = $request->request->all();
-        $file = new Files();
-        $file-> setEntrepreneur($datas['entrepreneur']);
-        $file-> setTitreProjet($datas['titre_projet']);
-        $file-> setContact($datas['contact']);
-        $file-> setProfession($datas['profession']);
-        $file-> setDateLancement(new \DateTime($datas['date_lancement']));
-        $file->setCreateAt(new \DateTimeImmutable());
-        $filesRepo->add($file,true);
+       
+        // on verifi
 
-        return new JsonResponse([['msg' => 'step 1 ass been saved', 'code' => 200]]);
+        $exist = $filesRepo->findBy(['entrepreneur' => $datas['entrepreneur'], 'contact' => $datas['contact']]);
+
+        if($exist == null){
+            $file = new Files();
+            $file-> setEntrepreneur($datas['entrepreneur']);
+            $file-> setTitreProjet($datas['titre_projet']);
+            $file-> setContact($datas['contact']);
+            $file-> setProfession($datas['profession']);
+            $file-> setDateLancement(new \DateTime($datas['date_lancement']));
+            $file->setCreateAt(new \DateTimeImmutable());
+            $filesRepo->add($file,true);
+            
+            return new JsonResponse([['msg' => 'step 1 ass been saved', 'code' => 200,'id' => $file->getId()]]);
+            
+        }else{
+            return new JsonResponse([['code' => 300, 'msg' => 'Impossible de traiter ce dossier car il existe déjà']]);
+        }
     }
 }

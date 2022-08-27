@@ -22,16 +22,21 @@ $(() => {
                 method: "post",
                 body: datas
             }).then(async (response)=>{
-                                            
+                 
                 let contentType = response.headers.get("content-type");
                 if(contentType && contentType.indexOf("application/json") !== -1){
-                                                                                                
+                                                                         
                     const json = await response.json(); // reponse js 
                     
                    json.map((n)=>{
                     
                     if(n.code == 200){
-                        return location.href = $('#next').val();
+                        
+                        return location.href = $('#next').val() + '?id=' + n.id;
+                    }
+
+                    if(n.code == 300){
+                        $('#z_notification').html(n.msg).css('color','red');
                     }
                        
                    });

@@ -5,7 +5,7 @@
 {% block body %}
 <br><br><br>
     <div class="container">
-        <h3>FORMULAIRE D’ENTRETIEN D’OUVERTURE D’UN DOSSIER(2/3) </h3> <br>
+        <h3>FORMULAIRE D’ENTRETIEN D’OUVERTURE D’UN DOSSIER(2/3)</h3> <br>
         <p>
             Faites nous part des éléments déterminants qui vous ont amené à prendre la décision d’entreprendre.
          </p>
@@ -13,32 +13,52 @@
 
 
          <div class="col-md-8">
-           <form id="form" action="" method="post">
-                <input type="text" name="motivation" id="motivation"  placeholder="motivation" required /> <br><br>
+           <form id="form" action="{{path('app_save_part_2',{'id':id})}}" method="post">
+                <input type="text" name="motivation" id="motivation"  placeholder="motivation" /> <br><br>
                <b> principaux intérêts: </b> <br>
                 
                 <label for="c1" style="background-color: rgb(243, 241, 241); padding:2%;">
-                    <input type="checkbox" id="c1" name="c1" value="Guide personnel de l’entrepreneur" />
+                    <input type="checkbox" id="c1" name="c[]" value="Guide personnel de l’entrepreneur" />
                     Guide personnel de l’entrepreneur (Vision de l’entrepreneur et gestion du projet)
                 </label>
 
                 <label for="c3" style="background-color: rgb(243, 241, 241); padding:2%;">
-                    <input type="checkbox" id="c3" name="c3" value="Demande de financement bancaire" />
+                    <input type="checkbox" id="c3" name="c[]" value="Recherche de partenaires" />
                     Recherche de partenaires (associés, personnel clé, client important, fournisseur exclusif, etc.)
                 </label>
 
                 <label for="c2" style="background-color: rgb(243, 241, 241); padding:2%;">
-                    <input type="checkbox" id="c2" name="c2" value="Demande de financement bancaire" />
+                    <input type="checkbox" id="c2" name="c[]" value="Demande de financement bancaire" />
                     Demande de financement bancaire
                 </label>
 
                 <label for="c4" style="background-color: rgb(243, 241, 241); padding:2%;">
-                    <input type="checkbox" id="c4" name="c4" value="Demande de financement bancaire" />
+                    <input type="checkbox" id="c4" name="c[]" value="Développement des activités" />
                     Développement des activités (Croissance de l’entreprise)
                 </label>
 
                 <br>
-                <button class="btn btn-primary" type="button" id="step1">Suivant <span class="fa fa-next"></span></button>
+
+                <input type="text" name="autre" placeholder="Autre.." /> <br><br>
+
+                <label for="activite">Vos activités (séparer par des virgules)</label>
+                <input type="text" name="activites" id="activite" placeholder="activites" />
+
+                <br><br>
+                <b>Caractérisez, de la façon la plus précise possible, les grandes données du marché auxquelles vous pensez actuellement.</b>
+                <br>
+                <textarea name="cible" id="" cols="8" placeholder="Cible (Clientèle ou bénéficiaires)" rows="10"></textarea><br><br>
+                <textarea name="fournisseur" id="" cols="30" placeholder="Fournisseurs" rows="10"></textarea> <br><br>
+                <textarea name="concurent" id="" placeholder="Concurrents" cols="30" rows="10"></textarea><br><br>
+                <textarea name="sc" id="" placeholder="Stratégie commerciale" cols="30" rows="10"></textarea><br><br>
+                <b>Objectifs commerciaux</b>
+                <br>
+                <label for="oc">chiffre d'affaires mensuel ou chiffre d'affaires annuel voulu</label>
+                <input type="text" name="oc" id="oc" />
+                <br><br>
+                <labal for="i">Indiquez si vous avez déjà des personnes (morales ou physiques) ressources qui peuvent être considérées comme un appui futur pour votre projet.</labal> 
+                <textarea name="perso" id="i" cols="30" placeholder="ici" rows="10"></textarea>
+                <button class="btn btn-primary" type="submit" id="step1">Suivant <span class="fa fa-next"></span></button>
            </form>
          </div>
     </div>

@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<br><br><br>
+    <div class="container">
+        <h3>FORMULAIRE D’ENTRETIEN D’OUVERTURE D’UN DOSSIER(3/3)</h3> <br>
+            <p>Quels sont vos atouts financiers dans le cadre de ce projet ?</p>
+         <div id="form_view" class="col-md-8">
+           <form id="form" action="{{path('app_save_step_3',{'id':id})}}" method="post">
+                <input type="text" name="coup_investissement" id="entrepreneur"  placeholder="Coût de l’investissement (Fond De Roulement inclue) :" /> <br><br>
+                <input type="text" name="capital_social" id="titre_projet"  placeholder="Capital social"> <br><br>
+                <input type="text" name="credit_solisite" id="contact"  placeholder="Crédit à solliciter "><br><br>
+                <input type="text" name="benefice_escompte" id="profession"  placeholder="Bénéfices escomptés : " />
+                {# <input type="text" name="benefice_escompte" id="profession"  placeholder="Bénéfices escomptés : " /> #}
+                <br><br>
+                <p>Avez–vous déjà une idée exacte de certains aspects de votre projet ?</p>
+                <input type="text" name="effectif" placeholder="Effectifs à atteindre (Nombre de personnes à employer) : " /> <br><br>
+                <input type="text" name="apport_personnel" placeholder="Apport personnel (capital + compte courant):" id="" /><br><br>
+                <input type="text" name="delai_retour_investissement" placeholder="Délai du retour sur investissement :" /><br><br>
+                <input type="text" name="quantite_produit" placeholder="Quantité de produits / marchandises à vendre : " id="" /> <br><br>
+                <input type="text" name="rentabilite_prevu" placeholder="Rentabilité prévue de votre activité (TIR) : " /> <br><br>
+                <b>Forme juridique(clique sur le texte): </b> 
+                <div  style="background-color: rgb(228, 227, 227); padding:2%; margin:1%;">
+                    <input type="radio" name="fj" value="Société Anonyme (SA / SAS) " id="sa"><label for="sa">Société Anonyme (SA / SAS) </label>
+                </div>
+
+                <div  style="background-color: rgb(228, 227, 227); padding:2%; margin:1%;">
+                    <input type="radio" name="fj" value="Société à responsabilité limitée (SARL)  " id="sarl"><label for="sarl">Société à responsabilité limitée (SARL) </label>
+                </div>
+
+                <div  style="background-color: rgb(228, 227, 227); padding:2%; margin:1%;">
+                    <input type="radio" name="fj" value="Entreprise individuelle (Ets)    " id="ei"><label for="ei">Entreprise individuelle (Ets) </label>
+                </div>
+
+                <div  style="background-color: rgb(228, 227, 227); padding:2%; margin:1%;">
+                     <input type="radio" name="fj" value="Association/COOP OHADA" id="a"><label for="a">Association/COOP OHADA </label>
+                </div>
+
+                <div  style="background-color: rgb(228, 227, 227); padding:2%; margin:1%;">
+                    <input type="radio" name="fj" value="Société civile" id="sc"><label for="sc">Société civile</label>
+                </div>
+                <br><br>
+                <label for="fina">Indiquez d’autres informations utiles en votre possession pouvant participer au succès de cette mission. Signalez toute documentation (technique, commerciale, financières, etc.) disponible à nous remettre dans de brefs délais. </label>
+                <textarea name="final" id="fina" cols="30" rows="10"></textarea>
+                <button class="btn btn-primary btn-lg" type="submit" id="step1">Terminer <span class="fa fa-next"></span></button>
+           </form>
+         </div>
+    </div>
+    <br><br><br>
+    <input type="hidden" name="" id="start_step1" value="{{path('step1')}}" />
+    <input type="hidden" name="" id="next" value="{{path('step2')}}" />
+{% endblock %}
+
+{% block javascript %}
+    {# <script src="{{asset('assets/js/app/files.js')}}"></script> #}
+{% endblock %}
