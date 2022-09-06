@@ -4162,7 +4162,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxnufu6f8UL4="
 							},
-							"name": "image"
+							"name": "image",
+							"type": ""
 						}
 					]
 				},
@@ -4461,7 +4462,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCyKbGe9VJObs="
 							},
-							"name": "nom"
+							"name": "nom",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4469,7 +4471,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCyKbGe9VJObs="
 							},
-							"name": "prenom"
+							"name": "prenom",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4477,7 +4480,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCyKbGe9VJObs="
 							},
-							"name": "phone"
+							"name": "phone",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4485,7 +4489,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCyKbGe9VJObs="
 							},
-							"name": "email"
+							"name": "email",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4493,7 +4498,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCyKbGe9VJObs="
 							},
-							"name": "adresse"
+							"name": "adresse",
+							"type": ""
 						}
 					]
 				}

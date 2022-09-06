@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BLOG {% endblock %}
+
+{% block body %}
+<br><br><br>
+   <div class="container">
+       
+    <div class="row">
+        <main class="col-lg-8">
+
+            <h2>Liste des articles de blog</h2> <br>
+            {% if articles != null %}
+            
+            {% for art in articles %}
+                
+            <div class="job-post-main-area">
+                 
+                <div class="job-post">
+                    <div class="job-post-header">
+                        <h4 class="title"><a href="">{{art.titre}}</a></h4>
+                        <div class="job-post-meta">
+                            <div class="company-details">
+                                <span class="company-name">Poster par l'Admin</span>
+                                <span class="company-location">Douala, Cameroun</span>
+                            </div>
+                            <div class="company-reviwes">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rev-num">25,1542</span>
+                                <span class="rev-text">review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-post-details">
+                        <p>
+                            <img src="{{asset('assets/files/'~ art.image)}}" alt="">
+                            Cliquez sur le titre pour lire l'article. 
+                        </p>
+                    </div>
+                    <div class="job-post-footer d-flex justify-content-between">
+                        <div class="footer-left">
+                            <span class="job-post-time">04 Hours Ago</span>
+                            <button class="post-bookmark">
+                            <span class="bookmark-icon"><i class="fa fa-bookmark"></i></span>
+                            <span class="bookmark-text">Post</span>
+                            </button>
+                        </div>
+                        <div>
+                            <span class="job-time-nature">full time</span>
+                        </div>
+                    </div>
+                </div><!-- job-post end -->
+
+                </div>
+
+                <br><br>
+
+                {% endfor %}
+
+                {% else %}
+                     <h1><i>Pas encore d'article pour le moment</i></h1>
+                {% endif %}
+
+                </main>
+                </div>
+
+
+     <br><br><br>
+   </div>
+{% endblock %}
+

@@ -1,0 +1,23 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Creer un article de blog{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+   <h2>Creer un article maintenant  <a href="{{path('app_list_article')}}" class="btn btn-primary">Liste des articles</a></h2>
+   <br>
+   <form action="{{path('app_save_article')}}" method="post" enctype="multipart/form-data">
+    <input type="text" name="titre" id=""  placeholder="titre" required /> <br><br> 
+    <textarea name="contenu" id="" placeholder="contenu" cols="30" rows="10" required></textarea> <br><br>
+    <input type="file" name="image"  id="" required>
+    <br><br>
+    <button type="submit" class="cmn-btn"> Publier </button>
+   </form>
+</div>
+{% endblock %}
+ 

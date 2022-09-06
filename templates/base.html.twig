@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flio - Flying Academy Html Template</title>
+    <title>{% block title %} Flio - Flying Academy Html Template  {% endblock %} | M2B</title>
     <!-- fontawesome css link -->
     <link rel="stylesheet" href="{{asset('assets/css/fontawesome-all.min.css')}}">
     <!-- flaticon css -->
@@ -35,7 +35,7 @@
     <!-- preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-thumb">
-            <img src="{{asset('assets/images/propeller.png')}}" alt="image">
+            <img src="{{asset('assets/images/com/Fond.gif')}}" alt="image">
         </div>
     </div>
 
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="info-content">
                                         <h6 class="title">location</h6>
-                                        <span>medino, NY 10012, USA</span>
+                                        <span> Douala-Cameroun: Rue Logpom - Montana City </span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="info-content">
                                         <h6 class="title">email address</h6>
-                                        <span>demo@gmail.com</span>
+                                        <span>infos@m2b.com</span>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -71,26 +71,13 @@
                                     </div>
                                     <div class="info-content">
                                         <h6 class="title">Phone</h6>
-                                        <span>12345678900</span>
+                                        <span>+237 694 47 47 83 <br> +237 695 33 11 14 </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2">
-                        <div class="language-select-list d-flex flex-wrap">
-                            <div class="language-thumb">
-                                <img src="{{asset('assets/images/flag.png')}}" alt="image">
-                            </div>
-                            <div class="language-select">
-                                <select class="select-bar">
-                                    <option data-display="English">English</option>
-                                    <option value="1">Bangla</option>
-                                    <option value="2">Hindi</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -104,46 +91,42 @@
                     <nav class="navbar navbar-expand-lg p-0">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li class="menu_has_children"><a href="#0">Home</a>
+                                <li class="menu_has_children"><a href="{{path('app_home')}}">Accueil</a>
                                    
                                 </li>
-                                <li><a href="">About</a></li>
-                                <li class="menu_has_children"><a href="#0">Course<i class="fas fa-caret-down"></i></a>
+                                <li><a href="{{path('app_aboute')}}">Qui sommes-nous?</a></li>
+                                {# <li class="menu_has_children"><a href="#0">Course<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="">Crew Course</a></li>
                                         <li><a href="">Traffic Control Course</a></li>
                                         <li><a href="">Private Pilot Course</a></li>
                                         <li><a href="">ATP Training Course</a></li>
                                     </ul>
-                                </li>
-                                <li class="menu_has_children"><a href="#0">Pages<i class="fas fa-caret-down"></i></a>
+                                </li> #}
+                                <li class="menu_has_children"><a href="#0">Nos services<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="">Privacy Page</a></li>
-                                        <li><a href="">Service</a></li>
-                                        <li><a href="">Gallery Page</a></li>
-                                        <li><a href="">Job List</a></li>
-                                        <li><a href="">Job Details</a></li>
-                                        <li><a href="">Trainer</a></li>
-                                        <li><a href="">Trainer Profile</a></li>
-                                        <li><a href="">Student Registration</a></li>
-                                        <li><a href="">Faq Page</a></li>
-                                        <li><a href="">Register Page</a></li>
-                                        <li><a href="">Login Page</a></li>
-                                        <li><a href="">404 Page</a></li>
+                                        <li><a href="{{path('service_opt1')}}">assistance comptable et fiscal</a></li>
+                                        <li><a href="{{path('service_opt2')}}">Audit et conseils</a></li>
+                                        <li><a href="{{path('financement')}}">Financement</a></li>
+                                        <li><a href="{{path('ingenierie_finance')}}">Ingenierie Financiere</a></li>
+                                        {# <li><a href="">Analyse financière</a></li>
+                                        <li><a href="">Assistence juridique</a></li> #}
+                                        {# <li><a href="">Strategies</a></li>
+                                        <li><a href="">Conseils en management</a></li>
+                                        <li><a href="">Rédaction juridique</a></li>
+                                        <li><a href="">Evaluation d'entreprise</a></li>
+                                        <li><a href="">Communication d'entreprise</a></li>
+                                        <li><a href="">Conseils financier</a></li> #}
                                     </ul>
                                 </li>
-                                <li class="menu_has_children"><a href="#0">Blog<i class="fas fa-caret-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Blog Post One</a></li>
-                                        <li><a href="">Blog Post Two</a></li>
-                                        <li><a href="">Blog Post Three</a></li>
-                                        <li><a href="">Blog Details</a></li>
-                                    </ul>
+                                <li class="menu_has_children"><a href="{{path('nos_clients')}}">Nos clients<i class=""></i></a>
+                                <li class="menu_has_children"><a href="{{path('app_blog_home')}}">Blog<i class=""></i></a>
+                                   
                                 </li>
                                 <li><a href="{{path('contact')}}">Contact</a></li>
                             </ul>
                             <div class="header-action d-flex flex-wrap align-items-center">
-                                <a href="{{path('your_file')}}" class="cmn-btn">Open your file</a>
+                                <a href="{{path('your_file')}}" style="background-color :green; color: white;" class="cmn-btn btn-success">Ouvrez votre dossier</a>
                             </div>                    
                         </div>
                     </nav>
@@ -156,541 +139,7 @@
 
     <!-- banner-section start -->
     {% block body %} 
-    <section class="banner-section banner-section--style">
-        <div class="banner-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="banner-element">
-                        
-                        <img src="{{asset('assets/images/com/pexels-olga-neptuna-2078774.jpg')}}" alt="image">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="banner-content banner-content--style">
-                                    <h2 class="title">Welcome at M2B Conseils. </h2>
-                                    <p>You have an idea for a business project; you are a startup or a company; we are here to support you in realizing your business plan, the search for partners, and financing.</p>
-                                    <div class="btn-area">
-                                        <a href="{{path('contact')}}" class="cmn-btn">contact us</a>
-                                        <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="banner-element">
-                        
-                        <img src="{{asset('assets/images/com/pexels-olga-neptuna-2078774.jpg')}}" alt="image">
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="banner-content banner-content--style">
-                                    <h2 class="title">Get your idea and build It with us.</h2>
-                                    <p>Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier.</p>
-                                    <div class="btn-area">
-                                        <a href="" class="cmn-btn">contact us</a>
-                                        <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner-section end -->
-
-
-    <a href="#" class="scrollToTop"><img src="{{asset('assets/images/aeroplane.png')}}" alt="image"></a>
-
-
-    <!-- course-section start -->
-    <section class="course-section pt-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title">Business plan </h2>
-                        <span class="title-border"></span>
-                        <p>Corporate strategy entrepreneurial support; search for funding – lobbying; search for outlets; training/mentoring.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="course-wrapper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="course-item">
-                                    <div class="course-thumb">
-                                        <img src="{{asset('assets/images/com/PROJETS.png')}}" alt="image">
-                                    </div>
-                                    <div class="course-content">
-                                        <h3 class="title"><a href="">airline crew training</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="course-item">
-                                    <div class="course-thumb">
-                                        <img src="{{asset('assets/images/com/FINANCIAL.png')}}" alt="image">
-                                    </div>
-                                    <div class="course-content">
-                                        <h3 class="title"><a href="">aircarft maintenance</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="course-item">
-                                    <div class="course-thumb">
-                                        <img src="{{asset('assets/images/com/Reference.png')}}" alt="image">
-                                    </div>
-                                    <div class="course-content">
-                                        <h3 class="title"><a href="">air traffic control</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- course-section end -->
-
-
-    <!-- overview-section start -->
-    <section class="overview-section--style pt-120">
-        <div class="container">
-            <div class="row mb-30-none">
-                <div class="col-lg-6 mb-30">
-                    <div class="overview-content--style">
-                        <h2 class="title">Fields of reference</h2>
-                        <p>Agriculture - Livestock - Mine & Quarry - Real Estate -Industrial transformation (Paint, Chalk, Paper, Cosmetics, Industrial waste, Potatoes, Cassava, Corn, Metallurgy, Medicines, etc.) Telecommunications – Laboratory - Transport & logistics – Port services- Buildings and public works.</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul class="overview-item">
-                                    <li>public works.</li>
-                                    <li>Industrial transformation</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="overview-item">
-                                    <li>Cosmetics.</li>
-                                    <li>Laboratory</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="" class="cmn-btn">Ask a question</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-30">
-                    <div class="overview-thumb">
-                        <img src="{{asset('assets/images/com/Rollin3.jpg')}}" alt="image">
-                        <div class="video-icon">
-                            <a class="popup-youtube mfp-iframe" href="{{asset('assets/images/com/veninserin.mov')}}">
-                                <i class="fas fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter-area counter-area--style">
-                <div class="row mb-30-none">
-                    <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-30">
-                        <div class="counter-item">
-                            <span class="counter-number">2596</span>
-                            <h3 class="counter-content">Entrepreneur</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-30">
-                        <div class="counter-item">
-                            <span class="counter-number">8547</span>
-                            <span class="counter-content">Poject</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-30">
-                        <div class="counter-item">
-                            <span class="counter-number">175</span>
-                            <span class="counter-content">Jobs</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-30">
-                        <div class="counter-item">
-                            <span class="counter-number">4547</span>
-                            <span class="counter-content">Fundraiser</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- overview-section start -->
-
-
-    <!-- team-section start -->
-    <section class="team-section team-section--style pt-120 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title">Our Experts</h2>
-                        <span class="title-border"></span>
-                        <p>Our mission is to support you in your innovative ideas, whatever thier nature</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-30-none">
-                <div class="col-lg-6 col-md-6 mb-30">
-                    <div class="team-item d-flex flex-wrap">
-                        <div class="team-thumb">
-                            <img src="{{asset('assets/images/com/Rollin.jpg')}}" alt="image">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title"><a href="">ROLLIN FOKO</a></h3>
-                            <span class="sub-title"> CEO</span>
-                            <p>Graduated from the University of Douala and the CNAM-INTEC of Paris
-
-                                Certified Design Thinking
-                                
-                                Performing Entrepreneurship consultant and business plan specialist, TEF Mentor
-                                
-                                Program Manager Cameroon,Trainer
-                                
-                                French-speaking facilitator of the TEF UNDP
-                                
-                                Author-Designer of the software finance OHADA FIPRO-SOFT for the financial analysis of projects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-30">
-                    <div class="team-item d-flex flex-wrap">
-                        <div class="team-thumb">
-                            <img src="{{asset('assets/images/com/Franck.jpg')}}" alt="image">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title"><a href="">FRANCK CLOVIS NGUIFO</a></h3>
-                            <span class="sub-title"> GENERAL MANAGER</span>
-                            <p>Certified in Project Management, BIT SIYB Certified Project Management Consultant, data science and business strategy International consultant to AfDB and the Bank World in statistics economic Microfinance expert Business Intelligence expert Mentor TEF, MINJEC.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-30">
-                    <div class="team-item d-flex flex-wrap">
-                        <div class="team-thumb">
-                            <img src="{{asset('assets/images/com/Clement.jpg')}}" alt="image">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title"><a href="">CLEMENT FOUDJO</a></h3>
-                            <span class="sub-title"> PROJECT MANAGER</span>
-                            <p>Entrepreneurship Consultant, in studies and marketing strategy UNIDO certified expert in the framework for upgrading companies in Cameroon BIT SIYB Certified Program Advisor TRASFAGRI of APME, Business coach on the program PEA-Youth.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-30">
-                    <div class="team-item d-flex flex-wrap">
-                        <div class="team-thumb">
-                            <img src="{{asset('assets/images/com/Romuald.jpg')}}" alt="image">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title"><a href="">Romuald KINFACK DAGUIM</a></h3>
-                            <span class="sub-title">Technical Consultant</span>
-                            <p>Mechanical and IT engineer U.S. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- team-section end -->
-
-
-    <!-- choose-us-section start -->
     
-    <!-- choose-us-section end -->
-
-
-    <!-- faq-section start -->
-    <section class="faq-section pt-120 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title">Questions asked by visitors</h2>
-                        <span class="title-border"></span>
-                        <p>Here you have the questions asked by visitors followed by their appropriate answers. You can consult them before asking yours</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-30-none">
-                <div class="col-lg-6 mb-30">
-                    <div class="faq-left-content">
-                        <div class="faq-wrapper">
-                            <div class="faq-item active open">
-                                <h3 class="faq-title"><span class="title">25 years experiences</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">awesome airline courses</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">we follow all international facilities</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">iso certificate</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-30">
-                    <div class="faq-right-content">
-                        <div class="faq-wrapper">
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">awesome airline courses</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">25 years experiences</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">we follow all international facilities</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">iso certificate</span><span class="right-icon"></span></h3>
-                                <div class="faq-content">
-                                    <p>Platea tincidunt praesent mauris, facilisis vel sed ornare nulltcies proin luctus velilibero. At ligula amet, sit velit est morbi, sit eros tempus mus sit at ut tortor ut. Morbi nulla antmauris</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq-section end -->
-
-
-    <!-- call-action-section start -->
-    <section class="call-action-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="call-action-content">
-                        <h3 class="title">subscribe our newslaters</h3>
-                        <span class="sub-title">get your best printing  services</span>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <form class="call-action-form">
-                        <div class="form-group">
-                            <input type="text" name="text" placeholder="Get Services">
-                        </div>
-                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <!-- call-action-section end -->
-
-
-    <!-- portfolio-section start -->
-    {# <section class="portfolio-section pt-120 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title">our photo gallery</h2>
-                        <span class="title-border"></span>
-                        <p>Dictumst quis dolor fermentum felis id, libero sit suspendisse urna orci bibendum. donec non commodo sagittis sed feugiat aliquet feugiat lobortis </p>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-filter-wrapper wow fadeIn" data-wow-duration="2s">
-                <div class="button-group filter-btn-group">
-                    <button class="active" data-filter="*">All</button>
-                    <button data-filter=".desigen">crew training</button>
-                    <button data-filter=".marketing">maintenace</button>
-                    <button data-filter=".analysis">private pilot</button>
-                    <button data-filter=".research">flying</button>
-                </div>
-                <div class="grid">
-                    <div class="grid-item marketing analysis">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-7.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-7.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-7.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item research analysis">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-8.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-8.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-8.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item marketing analysis">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-9.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-9.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-9.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item desigen research">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-10.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-10.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-10.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item marketing analysis">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-11.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-11.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-11.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item desigen research">
-                        <div class="posrt-thumb">
-                            <img src="assets/images/portfolio-12.png" alt="portfolio image">
-                            <div class="hover">
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-12.png"><i class="fas fa-search"></i></a>
-                                <a class="image-popup" title="portfolio image" href="assets/images/portfolio-12.png"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> #}
-    <!-- portfolio-section end -->
-
-
-    <!-- client-section start -->
-    <section class="client-section bg_img" data-background="{{asset('assets/images/testimonial-bg.png')}}">
-        <div class="container">
-            <div class="client-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="client-item">
-                            <div class="client-content">
-                                <blockquote>pellentesque accumsan pellentesque, nec sempnon nullam. trices in, risus eget eipsum interdum, ullamcorper rhoncus urusscsque ut non risus vitae. A libero eu dui id id cratellus magna commodo sed elit sed imperdiet world active hole worlf fingh upto your course and what is demo .</blockquote>
-                                <div class="client-header">
-                                    <h5 class="sub-title">ROLLIN FOKO</h5>
-                                    <span>CEO</span>
-                                </div>
-                            </div>
-                            <div class="client-thumb">
-                                <img src="{{asset('assets/images/com/Rollin.jpg')}}" alt="client">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- client-section end -->
-
-
-    <!-- blog-section start -->
-    <section class="blog-section pt-120 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-header">
-                        <h2 class="section-title">latest blog post</h2>
-                        <span class="title-border"></span>
-                        <p>Follow us on our blog for the latest articles concerning our field of activity </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mb-30-none">
-                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
-                    <div class="blog-item">
-                        <div class="blog-thumb--style">
-                            <img src="{{asset('assets/images/com/Fish.jpg')}}" alt="image">
-                        </div>
-                        <div class="blog-content--style">
-                            <h3 class="title"><a href="">congue sapieni gulesingng a metus sed neque</a></h3>
-                            <div class="meta-post d-flex flex-wrap justify-content-between">
-                                <span class="meta-user">post by Admin</span>
-                                <span class="meta-user">25 Dec 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
-                    <div class="blog-item">
-                        <div class="blog-thumb--style">
-                            <img src="{{asset('assets/images/com/Rollin3.jpg')}}" alt="image">
-                        </div>
-                        <div class="blog-content--style">
-                            <h3 class="title"><a href="">molestie leo tinciscelengdi risque miquisvol</a></h3>
-                            <div class="meta-post d-flex flex-wrap justify-content-between">
-                                <span class="meta-user">post by Admin</span>
-                                <span class="meta-user">25 Dec 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
-                    <div class="blog-item">
-                        <div class="blog-thumb--style">
-                            <img src="{{asset('assets/images/com/Forest.jpg')}}" alt="image">
-                        </div>
-                        <div class="blog-content--style">
-                            <h3 class="title"><a href="">sollicitudin proiner overfdn at utscelerisque</a></h3>
-                            <div class="meta-post d-flex flex-wrap justify-content-between">
-                                <span class="meta-user">post by Admin</span>
-                                <span class="meta-user">25 Dec 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- blog-section end -->
-
     {% endblock %}
 
     <!-- footer-section start -->
@@ -699,48 +148,48 @@
             <div class="row mb-30-none">
                 <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">popular courses</h3>
+                        <h3 class="widget-title">PRESTATIONS DU CABINET</h3>
                         <ul>
-                            <li><a href="#">airline crew training</a></li>
-                            <li><a href="#">atp - ctp courses</a></li>
-                            <li><a href="#">air traffic control</a></li>
-                            <li><a href="#">online training</a></li>
-                            <li><a href="#">pilot speciality courses</a></li>
+                            <li><a href="#">Analyse des hydrocarbures</a></li>
+                            <li><a href="#">Complexe intégré d’élevage</a></li>
+                            <li><a href="#">Carrière de gravier à Yaoundé</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>   
                 <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">useful link</h3>
+                        <h3 class="widget-title">DOMAINE D’EXPERTISES </h3>
                         <ul>
-                            <li><a href="#">create your account</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">be come a pilot</a></li>
-                            <li><a href="#">latest news</a></li>
+                            <li><a href="#">GESTION DES PROJETS</a></li>
+                            <li><a href="#">DESIGN DES PROJETS - MAITRISE D’ŒUVRE DES PROJETS </a></li>
+                            <li><a href="#">ACCOMPAGNEMENT ENTREPRENEURIAL</a></li>
+                            <li><a href="#">RECHERCHE DE FINANCEMENT – LOBBYING </a></li>
                             <li><a href="#">trainer</a></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">our foot prient</h3>
+                        <h3 class="widget-title">DATES DE CLÉS</h3>
                         <ul>
-                            <li><a href="#">united kingdom</a></li>
-                            <li><a href="#">asia subcotinent</a></li>
-                            <li><a href="#">middle west</a></li>
-                            <li><a href="#">South africa</a></li>
+                            <li><a href="#"> DATE DE CRÉATION : 2004 </a></li>
+                            <li><a href="#"> FORMALISATION : 2010 EN ETS </a></li>
+                            <li><a href="#">1ÈRE MUTATION : 2015 EN SARL </a></li>
+                            <li><a href="#"> 2ÈME MUTATION : 2020 EN SA AVEC CA </a></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
                         <h3 class="widget-title">contact us</h3>
                         <ul class="footer-widget-content">
                             <li>
-                                <p><i class="fas fa-map-marker-alt"></i>6803 Dickens Islands Apt. 567, PortMliew, TX 149420145</p>
+                                <p><i class="fas fa-map-marker-alt"></i>BP : 11 325 Douala-Cameroun - Rue Logpom - Montana City </p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope"></i>demo@gmail.com example@gmail.com</p>
+                                <p><i class="fas fa-envelope"></i> directeur_m2b@yahoo.fr</p>
                             </li>
                         </ul>
                         <ul class="footer-social">

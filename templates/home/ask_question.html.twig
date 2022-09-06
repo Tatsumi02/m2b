@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posez nous vos questions {% endblock %}
+
+{% block body %}
+   <div class="container">
+        <br><br><br><br><br><br><br><br><br>
+        <center>
+                <h1>Poser votre question</h1> <br><br>
+                <p>
+                   <form action="{{path('app_save_contact')}}" method="post"> 
+                    <input type="text" placeholder="Contact" name="contact" /><br><br>
+                    <textarea name="question" id="" cols="30" rows="10" placeholder="Votre question ici " required></textarea>
+                    <button type="submit" class="cmn-btn">Envoyer votre question</button>
+                   </form>
+                </p>
+        </center>
+        <br><br><br><br><br><br><br><br><br>
+   </div>
+{% endblock %}
+

@@ -1,0 +1,41 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Liste des dossiers enregistrer {% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+
+    <h2>Liste des dossiers ({{dossiers|length}}) <span class="fa fa-folder" style="font-size:1.4em;"></span></h2> <br>
+
+    <table class="table" border="1">
+        <thead>
+            <th> titre du projets </th>
+            <th> Entrepreneurs </th>
+            <th> contacts </th>
+            <th> professions </th>
+            <th> Dates de lancements </th>
+            <th> Options </th>
+        </thead>
+        <tbody>
+            {% for dossier in dossiers %}
+                <tr>
+                    <td>{{ dossier.titreProjet }}</td>
+                    <td>{{ dossier.entrepreneur }}</td>
+                    <td>{{ dossier.contact }}</td>
+                    <td>{{ dossier.profession }}</td>
+                    <td>{{ dossier.dateLancement|date("d/m/Y") }}</td>
+                    <td>
+                        <a href="{{ path('detail_dossier',{'id':dossier.id}) }}" class="btn btn-primary">plus de détails</a>
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

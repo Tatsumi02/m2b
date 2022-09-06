@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 {# Gebedol  #}
+
+{% block title %} Contact {% endblock %}
 {% block body %}
 <section class="contact-section pt-120 pb-120">
     <div class="container">
@@ -9,15 +11,18 @@
                     <div class="col-lg-5 p-0">
                         <div class="change-catagory-area">
                             <h3 class="title">send us a Messages</h3>
-                            <form class="contact-form" id="contact_form_submit">
+                            <form class="contact-form" method="post" action="{{path('save_contact')}}" id="contact_form_submit">
                                 <div class="form-group">
-                                    <input type="text" id="name" name="text" placeholder="full name">
+                                    <input type="text" id="name" name="nom" placeholder="full name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" name="email" placeholder="Email">
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea placeholder="Message" id="message" cols="30" rows="2"></textarea>
+                                    <input type="phone" id="phone" name="phone" placeholder="Phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Message" name="message" id="message" cols="30" rows="2" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" class="cmn-btn.active" value="submit now">
@@ -29,11 +34,11 @@
                     <div class="col-lg-5 p-0">
                         <div class="common-form-style bg-one create-account">
                             <h3 class="title">contact info</h3>
-                            <p>Quam arcu ac, at adipiscing justo lectus nibh massa. Quam euismod, nam eu tellus, massa non mauris consequaturna mauris aliquet lorem molestie nec.</p>
+                            <p>Nous avons à ce titre, réalisé et participé à différentes missions plus ou moins complexes, et comptons mettre tout notre savoir faire et nos expériences pour accompagner les promoteurs dans l’exécution de leur aventure entrepreneuriale.</p>
                             <ul class="account-item">
-                                <li>USA, Callifornia 20, Firs Avenue,Callifornia</li>
-                                <li>example@.com demo@.com</li>
-                                <li>01234567890 0124567890</li>
+                                <li> Douala-Cameroun </li>
+                                <li> directeur_m2b@yahoo.fr</li>
+                                <li> +237 694 47 47 83 <br> +237 695 33 11 14 </li>
                             </ul>
                         </div>
                     </div>

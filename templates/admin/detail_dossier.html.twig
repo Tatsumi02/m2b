@@ -1,0 +1,146 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Detail sur "{{dossier.titreProjet}}"{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h2>Details du dossier "{{dossier.titreProjet}}"</h2>
+   <table class="table">
+   <tr>
+    <th>titre</th>
+    <td>{{dossier.titreProjet}}</td>
+   </tr>
+
+   <tr>
+    <th>Entrepreneur</th>
+    <td>{{ dossier.entrepreneur }}</td>
+   </tr>
+
+   <tr>
+    <th>Contact</th>
+    <td>{{dossier.contact}}</td>
+   </tr>
+
+   <tr>
+    <th>Profession</th>
+    <td>{{ dossier.profession }}</td>
+   </tr>
+
+   <tr>
+    <th>Date de lencement</th>
+    <td>{{dossier.dateLancement|date("d/m/Y")}}</td>
+   </tr>
+
+   <tr>
+    <th>Motivation</th>
+    <td>{{ dossier.motivation }}</td>
+   </tr>
+
+   <tr>
+    <th>Principaux interets</th>
+    <td>{{ dossier.principauxInteret }}</td>
+   </tr>
+
+   <tr>
+    <th>Activié</th>
+    <td>{{dossier.activites}}</td>
+   </tr>
+
+   <tr>
+    <th>Cible</th>
+    <td>{{dossier.cible}}</td>
+   </tr>
+
+   <tr>
+    <th>fournisseur</th>
+    <td>{{dossier.fournisseur}}</td>
+   </tr>
+
+   <tr>
+    <th>Concurent</th>
+    <td>{{dossier.concurent}}</td>
+   </tr>
+
+   <tr>
+    <th>Strategie commercial</th>
+    <td>{{dossier.strategieCommercial}}</td>
+   </tr>
+
+   <tr>
+    <th>Objectif commerciaux</th>
+    <td>{{ dossier.objectifCommerciaux }}</td>
+   </tr>
+
+   <tr>
+    <th>Partie prenante</th>
+    <td>{{ dossier.partiePrenante }}</td>
+   </tr>
+
+   <tr>
+    <th>Coup investissement</th>
+    <td>{{dossier.coupInvestissement}}</td>
+   </tr>
+
+   <tr>
+    <th>Capital Sociale</th>
+    <td>{{dossier.capitalSocial}}</td>
+   </tr>
+
+   <tr>
+    <th>Credi a solicite</th>
+    <td>{{ dossier.creditASolicite }}</td>
+   </tr>
+
+   <tr>
+    <th>Benefice escompte</th>
+    <td>{{dossier.beneficeEscompte}}</td>
+   </tr>
+
+   <tr>
+    <th>nombre Employer</th>
+    <td>{{dossier.nbEmployer}}</td>
+   </tr>
+
+   <tr>
+    <th>Apport personnel</th>
+    <td>{{ dossier.apportPersonnel }}</td>
+   </tr>
+
+   <tr>
+    <th>Delait de retour sur investissement</th>
+    <td>{{ dossier.delaiRetourInvestissement }}</td>
+   </tr>
+
+   <tr>
+    <th>Quantite produit</th>
+    <td>{{ dossier.quantiteProduit }}</td>
+   </tr>
+
+   <tr>
+    <th>Rentabilité prévu</th>
+    <td>{{ dossier.rentabilitePrevu }}</td>
+   </tr>
+
+   <tr>
+    <th>Forme juridique</th>
+    <td>{{dossier.formeJuridique}}</td>
+   </tr>
+
+   <tr>
+    <th>Information complementaire</th>
+    <td>{{dossier.InformationComplementaire}}</td>
+   </tr>
+
+   <tr>
+    <th>Date de dépôt du dossier </th>
+    <td>{{ dossier.createAt|date("d/m/Y") }}</td>
+   </tr>
+
+   </table>
+</div>
+{% endblock %}

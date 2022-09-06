@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- login.html  30 Nov 2019 03:29:47 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connection</title>
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="{{asset('assets/css/fontawesome-all.min.css')}}">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="{{asset('assets/font/flaticon.css')}}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{asset('assets/images/fav.png')}}" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+</head>
+<body>
+
+
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-thumb">
+            <img src="{{asset('assets/images/com/Fond.gif')}}" alt="image">
+        </div>
+    </div>
+
+    <!-- header-section start -->
+
+    <!-- header-section end -->
+
+
+    <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a>
+
+     <!-- breadcrumb-section start -->
+     <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{path('app_home')}}">Voir le site</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Connexion</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- breadcrumb-section end -->
+
+
+    <!-- register-section start -->
+    <section class="register-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="register-form-area account-area">
+                        
+                        <h3 class="title">well come to Flio</h3>
+                        <p>Maecenas mollis dictum aliquam Velit sapien  </p>
+                        <form class="create-account-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="myInput" placeholder="Re - Password">
+                                <a href="#0" id="show-pass-one" class="show-pass"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="myInputTwo" placeholder="Password">
+                                <a href="#0" id="show-pass-two" class="show-pass"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox-wrapper d-flex flex-wrap align-items-center ">
+                                    <div class="checkbox-item">
+                                        <input type="radio" id="c1" name="ticket-type">
+                                        <label for="c1">I Wish To Receieve All News & Update?</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="create Specon account">
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div class="login-form-area account-area change-form">
+                       <img src="{{asset('assets/images/com/Fond.gif')}}" alt="">
+                        <h3 class="title">Connexion au compte admin</h3>
+                        <p>L'interface admin permet de manager l'application</p>
+
+                        {% if error %}
+                                <div class="alert alert-danger">{{error.messageKey|trans(error.messageData, 'security')}}</div>
+                        {% endif %}
+
+                        <form class="create-account-form" action="{{path('app_login')}}" method="post">
+                            <div class="form-group">
+                                <input type="text" placeholder="User Name" name="_username" value="{{last_username}}" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="myInputTwo" placeholder="Password" name="_password" required>
+                                <a href="#0" id="show-pass-two" class="show-pass"><i class="fas fa-eye"></i></a>
+                            </div>
+                            <ul class="lost-pass">
+                                <li>
+                                    <a href="#0">Forget Password?</a>
+                                </li>
+                                <li>
+                                    <div class="form-group form-group--style">
+                                        <input type="submit" value="Login">
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                        {#  #}
+                        <div class="terms-area">
+                            <p class="terms-and-conditions"><a href="#0">Tream & Condition & Privacy?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- register-section end -->
+
+
+    
+    <div class="privacy-area wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p><a href="http://www.greenconsolidis.com">by Green Consolidis</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- footer-section end -->
+    
+
+
+
+
+<!-- jquery -->
+<script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
+<!-- migarate-jquery -->
+<script src="{{asset('assets/js/jquery-migrate-3.0.0.js')}}"></script>
+<!-- bootstrap js -->
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<!-- magnific-popup js -->
+<script src="{{asset('assets/js/jquery.magnific-popup.js')}}"></script>
+<!-- isotope -->
+<script src="{{asset('assets/js/isotope.pkgd.min.js')}}"></script>
+<!-- nice-select js-->
+<script src="{{asset('assets/js/jquery.nice-select.js')}}"></script>
+<!-- swipper js -->
+<script src="{{asset('assets/js/swiper.min.js')}}"></script>
+<!-- waypoints js link -->
+<script src="{{asset('assets/js/jquery.waypoints.min.js')}}"></script>
+<!-- counterup js -->
+<script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
+<!-- paroller js -->
+<script src="{{asset('assets/js/jquery.paroller.min.js')}}"></script>
+<!-- main -->
+<script src="{{asset('assets/js/main.js')}}"></script>
+
+
+</body>
+
+<!-- login.html  30 Nov 2019 03:29:47 GMT -->
+</html>
