@@ -16,7 +16,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
+#[Route('/{_locale}', requirements: [
+    '_locale' => 'en|fr|de',
+ ])]
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
@@ -26,7 +30,7 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
             'article1' => $articlesRepo->findBy([],['id' => 'desc'])[0],
             'article2' => $articlesRepo->findBy([],['id' => 'desc'])[1],
-            'article3' => $articlesRepo->findBy([],['id' => 'desc'])[1],
+            'article3' => $articlesRepo->findBy([],['id' => 'desc'])[2],
             'questions' => $questionRepos ->findBy(['statut'=>'repondu'],['id' => 'desc']),  // recuperation de la liste des questions pour les afficher sur la page d'accueil.
 
         ]);

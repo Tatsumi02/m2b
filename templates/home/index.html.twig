@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    ACCUEIL :: PRÉSENTATION – VALEURS RÉFÉRENCES - EXPÉRIENCES PRESTATIONS - MISSIONS
+    {% trans %} ACCUEIL :: PRÉSENTATION {% endtrans %}
 {% endblock %}
 
 {% block body %}
+
 <section class="banner-section banner-section--style">
     <div class="banner-slider">
         <div class="swiper-wrapper">
@@ -17,11 +18,11 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="banner-content banner-content--style">
-                                <h2 class="title">Accompagner les grandes entreprises à maintenir leur standing. </h2>
-                                <p>You have an idea for a business project; you are a startup or a company; we are here to support you in realizing your business plan, the search for partners, and financing.</p>
+                                <h2 class="title">{% trans %} Accompagner les grandes entreprises à maintenir leur standing. {% endtrans %}</h2>
+                                <p>{% trans %}You have an idea for a business project; you are a startup or a company; we are here to support you in realizing your business plan, the search for partners, and financing.{% endtrans %}</p>
                                 <div class="btn-area">
-                                    <a href="{{path('contact')}}" class="cmn-btn">contact us</a>
-                                    <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
+                                    <a href="{{path('contact')}}" class="cmn-btn">{% trans %} Nous contacter {% endtrans %}</a>
+                                    <a href="{{path('your_file')}}" class="cmn-btn-active"> {% trans %} Ouvrez votre dossier {% endtrans %}</a>
                                 </div>
                             </div>
                         </div>
@@ -39,11 +40,11 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="banner-content banner-content--style">
-                                <h2 class="title">Acompagner les projets innovants à devenir des entreprises à forte valeur ajoutée</h2>
-                                <p>Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier.</p>
+                                <h2 class="title">{% trans %} Acompagner les projets innovants à devenir des entreprises à forte valeur ajoutée {% endtrans %}</h2>
+                                <p>{% trans %} Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier. {% endtrans %}</p>
                                 <div class="btn-area">
-                                    <a href="" class="cmn-btn">contact us</a>
-                                    <a href="{{path('your_file')}}" class="cmn-btn-active">Open your file</a>
+                                    <a href="" class="cmn-btn">{% trans %} Nous contacter {% endtrans %}</a>
+                                    <a href="{{path('your_file')}}" class="cmn-btn-active">{% trans %} Ouvrez votre dossier {% endtrans %}</a>
                                 </div>
                             </div>
                         </div>
@@ -66,9 +67,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-header">
-                    <h2 class="section-title">Business plan </h2>
+                    <h2 class="section-title">{% trans %}Ce que nous faisons {% endtrans %} </h2>
                     <span class="title-border"></span>
-                    <p>Corporate strategy entrepreneurial support; search for funding – lobbying; search for outlets; training/mentoring.</p>
+                    <p>{% trans %}Accompagnement entrepreneurial en stratégie d'entreprise ; recherche de financement – lobbying ; rechercher des points de vente ; formation/encadrement.{% endtrans %}</p>
                 </div>
             </div>
         </div>

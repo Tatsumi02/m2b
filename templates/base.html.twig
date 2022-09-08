@@ -77,6 +77,26 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-2">
+                        <div class="language-select-list d-flex flex-wrap">
+                            <div class="language-thumb">
+                                {# <img src="{{asset('assets/images/flag.png')}}" alt="image"> #}
+                            </div>
+                            <div class="language-select">
+                                <select class="select-bar" id="lang">
+                                    <option data-display="English" value="en"> English </option>
+                                    <option value="1" value="fr">  Français  </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.getElementById('lang').onselect = () => {
+                            alert('hum');
+                        }
+                    </script>
                     
                 </div>
             </div>
@@ -91,10 +111,10 @@
                     <nav class="navbar navbar-expand-lg p-0">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li class="menu_has_children"><a href="{{path('app_home')}}">Accueil</a>
+                                <li class="menu_has_children"><a href="{{path('app_home')}}">{% trans %} Accueil {% endtrans %}</a>
                                    
                                 </li>
-                                <li><a href="{{path('app_aboute')}}">Qui sommes-nous?</a></li>
+                                <li><a href="{{path('app_aboute')}}">{% trans %} Qui sommes-nous? {% endtrans %}</a></li>
                                 {# <li class="menu_has_children"><a href="#0">Course<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="">Crew Course</a></li>
@@ -103,12 +123,12 @@
                                         <li><a href="">ATP Training Course</a></li>
                                     </ul>
                                 </li> #}
-                                <li class="menu_has_children"><a href="#0">Nos services<i class="fas fa-caret-down"></i></a>
+                                <li class="menu_has_children"><a href="#0">{% trans %}Nos services{% endtrans %}<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{path('service_opt1')}}">assistance comptable et fiscal</a></li>
-                                        <li><a href="{{path('service_opt2')}}">Audit et conseils</a></li>
-                                        <li><a href="{{path('financement')}}">Financement</a></li>
-                                        <li><a href="{{path('ingenierie_finance')}}">Ingenierie Financiere</a></li>
+                                        <li><a href="{{path('service_opt1')}}">{% trans %}assistance comptable et fiscal{% endtrans %}</a></li>
+                                        <li><a href="{{path('service_opt2')}}">{% trans %}Audit et conseils{% endtrans %}</a></li>
+                                        <li><a href="{{path('financement')}}">{% trans %}Financement {% endtrans %} </a></li>
+                                        <li><a href="{{path('ingenierie_finance')}}">{% trans %} Ingenierie Financiere {% endtrans %} </a></li>
                                         {# <li><a href="">Analyse financière</a></li>
                                         <li><a href="">Assistence juridique</a></li> #}
                                         {# <li><a href="">Strategies</a></li>
@@ -119,14 +139,14 @@
                                         <li><a href="">Conseils financier</a></li> #}
                                     </ul>
                                 </li>
-                                <li class="menu_has_children"><a href="{{path('nos_clients')}}">Nos clients<i class=""></i></a>
-                                <li class="menu_has_children"><a href="{{path('app_blog_home')}}">Blog<i class=""></i></a>
+                                <li class="menu_has_children"><a href="{{path('nos_clients')}}">{% trans %} Nos clients {% endtrans %}<i class=""></i></a>
+                                <li class="menu_has_children"><a href="{{path('app_blog_home')}}">{% trans %} Blog {% endtrans %}<i class=""></i></a>
                                    
                                 </li>
-                                <li><a href="{{path('contact')}}">Contact</a></li>
+                                <li><a href="{{path('contact')}}">{% trans %}Contact{% endtrans %}</a></li>
                             </ul>
                             <div class="header-action d-flex flex-wrap align-items-center">
-                                <a href="{{path('your_file')}}" style="background-color :green; color: white;" class="cmn-btn btn-success">Ouvrez votre dossier</a>
+                                <a href="{{path('your_file')}}" style="background-color :green; color: white;" class="cmn-btn btn-success">{% trans %} Ouvrez votre dossier {% endtrans %}</a>
                             </div>                    
                         </div>
                     </nav>

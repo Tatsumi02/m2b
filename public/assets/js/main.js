@@ -231,7 +231,7 @@ var swiper = new Swiper('.client-slider', {
   loop: true,
   autoplay: {
     speeds: 1000,
-    delay: 2000,
+    delay: 12000,
   },
   breakpoints: {
     991: {
@@ -253,7 +253,7 @@ var swiper = new Swiper('.banner-slider', {
   loop: true,
   autoplay: {
     speeds: 1000,
-    delay: 3000,
+    delay: 10000,
   },
   breakpoints: {
     991: {

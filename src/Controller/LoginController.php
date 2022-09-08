@@ -13,6 +13,12 @@ use Symfony\Component\HttpFoundation\Session\Session;
 
 class LoginController extends AbstractController
 {
+
+    #[Route('/', name: 'app_start')]
+    public function app_start(){
+        return $this->redirectToRoute('app_home');
+    }
+
     #[Route('/login', name: 'app_login')]
     public function index(AuthenticationUtils $authenticationUtils): Response
     {

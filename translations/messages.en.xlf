@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="0jg4sef" resname="Symfony is great">
+        <source>J'aime Symfony </source>
+        <target>Symfony is great</target>
+      </trans-unit>
+       <trans-unit id="0jg4sef1" resname="Ouvrez votre dossier"> 
+        <source>Ouvrez votre dossier</source>
+        <target>open your file</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef2" resname="Accompagnement entrepreneurial en stratégie d'entreprise ; recherche de financement – lobbying ; rechercher des points de vente ; formation/encadrement."> 
+        <source>Accompagnement entrepreneurial en stratégie d'entreprise ; recherche de financement – lobbying ; rechercher des points de vente ; formation/encadrement.</source>
+        <target>Corporate strategy entrepreneurial support; search for funding – lobbying; search for outlets; training/mentoring.</target>
+      </trans-unit>
+       <trans-unit id="0jg4sef3" resname="Ce que nous faisons"> 
+        <source>Ce que nous faisons</source>
+        <target>What we do</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef4" resname="Acompagner les projets innovants à devenir des entreprises à forte valeur ajoutée"> 
+        <source>Acompagner les projets innovants à devenir des entreprises à forte valeur ajoutée</source>
+        <target>Supporting innovative projects to become companies with high added value</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef5" resname="Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier."> 
+        <source>Gestion de projet (planification, gestion d'équipe, gestion des ressources, suivi-évaluation, assistance à maîtrise d'ouvrage) conception de projet - gestion de projet : faisabilité, opportunité, marché, analyste technique et financier.</source>
+        <target>Project management (planning, team management, resource management, monitoring-evaluation, project management assistance) project design - project management: feasibility, opportunity, market, technical and financial analyst.</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef6" resname="Accompagner les grandes entreprises à maintenir leur standing."> 
+        <source>Accompagner les grandes entreprises à maintenir leur standing.</source>
+        <target>Support large companies to maintain their standing.</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef7" resname="Nous contacter"> 
+        <source>Nous contacter</source>
+        <target>contact us</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef8" resname="ACCUEIL :: PRÉSENTATION"> 
+        <source>ACCUEIL :: PRÉSENTATION</source>
+        <target>HOME :: PRESENTATION</target>
+      </trans-unit>
+       <trans-unit id="0jg4sef9" resname="Nos clients"> 
+        <source>Nos clients</source>
+        <target>Our clients</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef10" resname="Ingenierie Financiere"> 
+        <source>Ingenierie Financiere</source>
+        <target>Financial engineering</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef11" resname="Financement"> 
+        <source>Financement</source>
+        <target>Funding</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef12" resname="Audit et conseils"> 
+        <source>Audit et conseils</source>
+        <target>Audit and advice</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef13" resname="assistance comptable et fiscal"> 
+        <source>assistance comptable et fiscal</source>
+        <target>accounting and tax assistance</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef14" resname="Nos services"> 
+        <source>Nos services</source>
+        <target>Our services</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef15" resname="Qui sommes-nous?"> 
+        <source>Qui sommes-nous?</source>
+        <target>Who are we?</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef16" resname="Accueil"> 
+        <source>Accueil</source>
+        <target>Welcome</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
