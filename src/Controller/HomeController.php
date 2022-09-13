@@ -257,6 +257,18 @@ class HomeController extends AbstractController
         return $this->render('home/ingenierie_finance.html.twig',[]);
     }
 
+    /**
+     * @Route("/change-lang", name="change_lang")
+     */
+    public function change_lang(Request $request){
+        $lang = $request->query->get('lang');
+
+        $local = $request->getLocale();
+        $request->setLocale('en');
+        // return new Response($local2);
+        return $this->redirectToRoute('app_start');
+    }
+
 
 }
  

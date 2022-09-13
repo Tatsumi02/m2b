@@ -73,6 +73,70 @@
         <source>Accueil</source>
         <target>Welcome</target>
       </trans-unit>
+      <trans-unit id="0jg4sef17" resname="Satisfaction de la clientèle"> 
+        <source>Satisfaction de la clientèle</source>
+        <target>Customer satisfaction</target>
+      </trans-unit>
+      <trans-unit id="0jg4sef18" resname="Partenariat « win to win »"> 
+        <source>Partenariat « win to win »</source>
+        <target>Win-to-win partnership</target>
+      </trans-unit>
+      
+      <trans-unit id="0jg4sef19" resname="Support client : 24h/24"> 
+        <source>Support client : 24h/24</source>
+        <target>Customer support: 24 hours a day</target>
+      </trans-unit>
+      
+      <trans-unit id="0jg4sef21" resname="Champs de référence"> 
+        <source>Champs de référence</source>
+        <target>Reference fields</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef20" resname="Agriculture - Elevage - Mine et Carrière - Immobilier - Transformation industrielle (Peinture, Craie, Papier, Cosmétique, Déchets industriels, Pomme de terre, Manioc, Maïs, Métallurgie, Médicaments, etc.) Télécommunications - Laboratoire - Transport et logistique - Services portuaires - Bâtiments et travaux publics."> 
+        <source>Agriculture - Elevage - Mine et Carrière - Immobilier - Transformation industrielle (Peinture, Craie, Papier, Cosmétique, Déchets industriels, Pomme de terre, Manioc, Maïs, Métallurgie, Médicaments, etc.) Télécommunications - Laboratoire - Transport et logistique - Services portuaires - Bâtiments et travaux publics.</source>
+        <target>Agriculture - Livestock - Mine and Quarry - Real Estate -Industrial transformation (Paint, Chalk, Paper, Cosmetics, Industrial waste, Potatoes, Cassava, Corn, Metallurgy, Medicines, etc.) Telecommunications – Laboratory - Transport and logistics – Port services- Buildings and public works.</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef22" resname="poser une question"> 
+        <source>poser une question</source>
+        <target>Ask a question</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef23" resname="Notre mission est de vous accompagner dans vos idées innovantes, quelle que soit leur nature"> 
+        <source>Notre mission est de vous accompagner dans vos idées innovantes, quelle que soit leur nature</source>
+        <target>Our mission is to support you in your innovative ideas, whatever thier nature</target>
+      </trans-unit>
+       <trans-unit id="0jg4sef24" resname="PRÉSIDENT DU CONSEIL D’ADMINISTRATION"> 
+        <source>PRÉSIDENT DU CONSEIL D’ADMINISTRATION</source>
+        <target>CHAIRMAN OF THE BOARD OF DIRECTORS</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef25" resname="Diplômé de l’université de Douala et du CNAM-INTEC de Paris Certifié Design Thinking, Effectuation Consultant en entrepreneuriat et spécialiste du Business Plan TEF Mentor, Programme Manager Cameroun, Formateur, Facilitateur francophone du TEFPNUD Auteur-Concepteur du logiciel de finance OHADA FIPRO-SOFT pour l’analyse financière des projets."> 
+        <source>Diplômé de l’université de Douala et du CNAM-INTEC de Paris Certifié Design Thinking, Effectuation Consultant en entrepreneuriat et spécialiste du Business Plan TEF Mentor, Programme Manager Cameroun, Formateur, Facilitateur francophone du TEFPNUD Auteur-Concepteur du logiciel de finance OHADA FIPRO-SOFT pour l’analyse financière des projets.</source>
+        <target>Graduated from the University of Douala and CNAM-INTEC in Paris Certified Design Thinking, Effectuation Entrepreneurship Consultant and Business Plan Specialist TEF Mentor, Program Manager Cameroon, Trainer, French-speaking Facilitator of TEFPNUD Author-Designer of the OHADA FIPRO- finance software SOFT for the financial analysis of projects.</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef26" resname="ADMINISTRATEUR DIRECTEUR GÉNÉRAL"> 
+        <source>ADMINISTRATEUR DIRECTEUR GÉNÉRAL</source>
+        <target>CHIEF EXECUTIVE OFFICER</target>
+      </trans-unit>
+
+       <trans-unit id="0jg4sef27" resname="Diplômé de l’Université de Douala en gestion marketing, Certifié en gestion de projet, Certifié GERME du BIT Consultant en gestion de projet, sciences de données et stratégie d’entreprise Consultant international auprès de la BAD et la Banque Mondiale en statistiques économiques Expert en Microfinance Expert en Business Intelligence Mentor TEF, MINJEC."> 
+        <source>Diplômé de l’Université de Douala en gestion marketing, Certifié en gestion de projet, Certifié GERME du BIT Consultant en gestion de projet, sciences de données et stratégie d’entreprise Consultant international auprès de la BAD et la Banque Mondiale en statistiques économiques Expert en Microfinance Expert en Business Intelligence Mentor TEF, MINJEC.</source>
+        <target>Graduated from the University of Douala in marketing management, Certified in project management, Certified GERME from the BIT Consultant in project management, data science and business strategy International consultant to the AfDB and the World Bank in economic statistics Expert in Microfinance Expert in Business Intelligence Mentor TEF, MINJEC.</target>
+      </trans-unit>
+
+      <trans-unit id="0jg4sef28" resname="DIRECTEUR DE MISSION"> 
+        <source>DIRECTEUR DE MISSION</source>
+        <target>MISSION DIRECTOR</target>
+      </trans-unit>
+
+       <trans-unit id="0jg4sef29" resname="Diplômé de l’ESSEC de Douala en entrepreneuriat Consultant en entrepreneuriat, en études et stratégie marketing Expert-certifié ONUDI dans le cadre de la mise à niveau des entreprises au Cameroun Certifié GERME du BIT Consultant du programme TRASFAGRI de l’APME, Business coach au programme PEA-Jeunes."> 
+        <source>Diplômé de l’ESSEC de Douala en entrepreneuriat Consultant en entrepreneuriat, en études et stratégie marketing Expert-certifié ONUDI dans le cadre de la mise à niveau des entreprises au Cameroun Certifié GERME du BIT Consultant du programme TRASFAGRI de l’APME, Business coach au programme PEA-Jeunes.</source>
+        <target>Graduate of ESSEC Douala in entrepreneurship Consultant in entrepreneurship, studies and marketing strategy UNIDO-certified expert in the context of business upgrading in Cameroon Certified GERME of the BIT Consultant of the TRASFAGRI program of the APME, Business coach at the PEA-Youth program.</target>
+      </trans-unit>
+
+
     </body>
   </file>
 </xliff>

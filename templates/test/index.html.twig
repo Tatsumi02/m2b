@@ -3,14 +3,33 @@
 {% block title %}Hello TestController!{% endblock %}
 
 {% block body %}
+
+
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div class="example-wrapper">
-   {% trans %} Symfony is great {% endtrans %} 
-   {{locale}}
+    <button id="login-btn" class="btn">Log in</button>
    
 </div>
+<script>
+    // Initialize the agent at application startup.
+    const fpPromise = import('https://fpcdn.io/v3/oQNj2SRrTAMA1FHOiFMC')
+      .then(FingerprintJS => FingerprintJS.load());
+
+    // FingerprintJS is ready. Start listening to user actions.
+    document.querySelector('#login-btn').addEventListener('click', () => {
+      fpPromise
+        .then(fp => fp.get())
+        .then(result => {
+          // This is the visitor identifier:
+          const visitorId = result.visitorId;
+          console.log(visitorId);
+        });
+    });
+  </script>
+
+
 {% endblock %}

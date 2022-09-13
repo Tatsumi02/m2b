@@ -58,7 +58,7 @@
 <!-- banner-section end -->
 
 
-<a href="#" class="scrollToTop"><img src="{{asset('assets/images/aeroplane.png')}}" alt="image"></a>
+{# <a href="#" class="scrollToTop"><img src="{{asset('assets/images/aeroplane.png')}}" alt="image"></a> #}
 
 
 <!-- course-section start -->
@@ -83,7 +83,7 @@
                                     <img src="{{asset('assets/images/com/PROJETS.png')}}" alt="image">
                                 </div>
                                 <div class="course-content">
-                                    <h3 class="title"><a href="">Satisfaction de la clientèle</a></h3>
+                                    <h3 class="title"><a href="">{% trans %}Satisfaction de la clientèle{% endtrans %}</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                     <img src="{{asset('assets/images/com/FINANCIAL.png')}}" alt="image">
                                 </div>
                                 <div class="course-content">
-                                    <h3 class="title"><a href="">Partenariat « win to win »</a></h3>
+                                    <h3 class="title"><a href="">{% trans %}Partenariat « win to win » {% endtrans %}</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                                     <img src="{{asset('assets/images/com/Reference.png')}}" alt="image">
                                 </div>
                                 <div class="course-content">
-                                    <h3 class="title"><a href="">Support client : 24h/24</a></h3>
+                                    <h3 class="title"><a href="">{% trans %}Support client : 24h/24 {% endtrans %}</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -123,8 +123,8 @@
         <div class="row mb-30-none">
             <div class="col-lg-6 mb-30">
                 <div class="overview-content--style">
-                    <h2 class="title">Fields of reference</h2>
-                    <p>Agriculture - Livestock - Mine & Quarry - Real Estate -Industrial transformation (Paint, Chalk, Paper, Cosmetics, Industrial waste, Potatoes, Cassava, Corn, Metallurgy, Medicines, etc.) Telecommunications – Laboratory - Transport & logistics – Port services- Buildings and public works.</p>
+                    <h2 class="title">{% trans %} Champs de référence {% endtrans %}</h2>
+                    <p>{% trans %}Agriculture - Elevage - Mine et Carrière - Immobilier - Transformation industrielle (Peinture, Craie, Papier, Cosmétique, Déchets industriels, Pomme de terre, Manioc, Maïs, Métallurgie, Médicaments, etc.) Télécommunications - Laboratoire - Transport et logistique - Services portuaires - Bâtiments et travaux publics.{% endtrans %} </p>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="overview-item">
@@ -139,7 +139,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="{{path('ask_question')}}" class="cmn-btn">Ask a question</a>
+                    <a href="{{path('ask_question')}}" class="cmn-btn">{% trans %}poser une question{% endtrans %}</a>
                 </div>
             </div>
             <div class="col-lg-6 mb-30">
@@ -192,9 +192,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="section-header">
-                    <h2 class="section-title"> ÉQUIPE DIRIGEANTE</h2>
+                    <h2 class="section-title">{% trans %} LEADING TEAM {% endtrans %} </h2>
                     <span class="title-border"></span>
-                    <p>Our mission is to support you in your innovative ideas, whatever thier nature</p>
+                    <p>{% trans %}Notre mission est de vous accompagner dans vos idées innovantes, quelle que soit leur nature{% endtrans %}</p>
+                    {# <p>Our mission is to support you in your innovative ideas, whatever thier nature</p> #}
                 </div>
             </div>
         </div>
@@ -206,8 +207,8 @@
                     </div>
                     <div class="team-content">
                         <h3 class="title"><a href="">ROLLIN FOKO</a></h3>
-                        <span class="sub-title"> PRÉSIDENT DU CONSEIL D’ADMINISTRATION </span>
-                        <p>Diplômé de l’université de Douala et du CNAM-INTEC de Paris Certifié Design Thinking, Effectuation Consultant en entrepreneuriat et spécialiste du Business Plan TEF Mentor, Programme Manager Cameroun, Formateur, Facilitateur francophone du TEFPNUD Auteur-Concepteur du logiciel de finance OHADA FIPRO-SOFT pour l’analyse financière des projets.</p>
+                        <span class="sub-title">{% trans %} PRÉSIDENT DU CONSEIL D’ADMINISTRATION {% endtrans %} </span>
+                        <p>{% trans %}Diplômé de l’université de Douala et du CNAM-INTEC de Paris Certifié Design Thinking, Effectuation Consultant en entrepreneuriat et spécialiste du Business Plan TEF Mentor, Programme Manager Cameroun, Formateur, Facilitateur francophone du TEFPNUD Auteur-Concepteur du logiciel de finance OHADA FIPRO-SOFT pour l’analyse financière des projets.{% endtrans %}</p>
                     </div>
                 </div>
             </div>
@@ -218,8 +219,8 @@
                     </div>
                     <div class="team-content">
                         <h3 class="title"><a href="">FRANCK CLOVIS NGUIFO</a></h3>
-                        <span class="sub-title">ADMINISTRATEUR DIRECTEUR GÉNÉRAL</span>
-                        <p>Diplômé de l’Université de Douala en gestion marketing, Certifié en gestion de projet, Certifié GERME du BIT Consultant en gestion de projet, sciences de données et stratégie d’entreprise Consultant international auprès de la BAD et la Banque Mondiale en statistiques économiques Expert en Microfinance Expert en Business Intelligence Mentor TEF, MINJEC.</p>
+                        <span class="sub-title">{% trans %}ADMINISTRATEUR DIRECTEUR GÉNÉRAL{% endtrans %}</span>
+                        <p>{% trans %}Diplômé de l’Université de Douala en gestion marketing, Certifié en gestion de projet, Certifié GERME du BIT Consultant en gestion de projet, sciences de données et stratégie d’entreprise Consultant international auprès de la BAD et la Banque Mondiale en statistiques économiques Expert en Microfinance Expert en Business Intelligence Mentor TEF, MINJEC.{% endtrans %}</p>
                     </div>
                 </div>
             </div>
@@ -230,8 +231,8 @@
                     </div>
                     <div class="team-content">
                         <h3 class="title"><a href="">CLEMENT FOUDJO</a></h3>
-                        <span class="sub-title">DIRECTEUR DE MISSION</span>
-                        <p>Diplômé de l’ESSEC de Douala en entrepreneuriat Consultant en entrepreneuriat, en études et stratégie marketing Expert-certifié ONUDI dans le cadre de la mise à niveau des entreprises au Cameroun Certifié GERME du BIT Consultant du programme TRASFAGRI de l’APME, Business coach au programme PEA-Jeunes.</p>
+                        <span class="sub-title">{% trans %}DIRECTEUR DE MISSION{% endtrans %}</span>
+                        <p>{% trans %}Diplômé de l’ESSEC de Douala en entrepreneuriat Consultant en entrepreneuriat, en études et stratégie marketing Expert-certifié ONUDI dans le cadre de la mise à niveau des entreprises au Cameroun Certifié GERME du BIT Consultant du programme TRASFAGRI de l’APME, Business coach au programme PEA-Jeunes.{% endtrans %}</p>
                     </div>
                 </div>
             </div>
@@ -242,7 +243,7 @@
                     </div>
                     <div class="team-content">
                         <h3 class="title"><a href="">Romuald KINFACK DAGUIM</a></h3>
-                        <span class="sub-title">Technical Consultant</span>
+                        <span class="sub-title">{% trans %}Technical Consultant{% endtrans %}</span>
                         <p>Mechanical and IT engineer U.S. </p>
                     </div>
                 </div>
@@ -327,17 +328,25 @@
             <div class="col-lg-7">
                 <div class="call-action-content">
                     <h3 class="title">subscribe our newslaters</h3>
-                    <span class="sub-title">get your best printing  services</span>
+                    <span class="sub-title"><font  id="mess">get your best printing  services</font></span>
                 </div>
             </div>
             <div class="col-lg-5">
-                <form class="call-action-form">
+                <form class="call-action-form" method="post" action="">
                     <div class="form-group">
-                        <input type="text" name="text" placeholder="Get Services">
+                        <input type="text" id="em" name="text" placeholder="Get Services">
                     </div>
-                    <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    <button type="button" class="subscribe-btn" id="but"><i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
+            <script>
+                let b = document.getElementById('but');
+                let z = document.getElementById('mess');
+                b.addEventListener('click',()=>{
+                    document.getElementById('em').value = '';
+                    z.innerHTML= '<span style="color:green;">Votre email a bien été enregistrer</span>';
+                })
+            </script>
         </div>
     </div>
 </section>
@@ -477,7 +486,7 @@
             <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
                 <div class="blog-item">
                     <div class="blog-thumb--style">
-                        <img src="{{asset('assets/files/'~article1.image)}}" alt="image">
+                        <img src="{{asset('assets/files/'~article1.image)}}" style="height: 500px; width:400px;" alt="image">
                     </div>
                     <div class="blog-content--style">
                         <h3 class="title"><a href="">{{article1.titre}}</a></h3>
@@ -488,6 +497,8 @@
                     </div>
                 </div>
             </div>
+
+            
 
             <div class="col-lg-4 col-md-6 col-sm-8 mb-30">
                 <div class="blog-item">

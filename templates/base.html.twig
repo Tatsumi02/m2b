@@ -86,15 +86,19 @@
                             <div class="language-select">
                                 <select class="select-bar" id="lang">
                                     <option data-display="English" value="en"> English </option>
-                                    <option value="1" value="fr">  Français  </option>
+                                    <option value="fr">  Français  </option>
                                 </select>
                             </div>
                         </div>
                     </div>
 
                     <script>
-                        document.getElementById('lang').onselect = () => {
-                            alert('hum');
+                        document.getElementById('lang').onchange = () => {
+                            var selectElmt = document.getElementById('lang');
+                            var val = selectElmt.options[selectElmt.selectedIndex].value;
+                            var one = "{{path('change_lang')}}";
+                             
+                            return location.href = one +'?lang='+val;
                         }
                     </script>
                     
@@ -158,6 +162,10 @@
 
 
     <!-- banner-section start -->
+    <a href="https://api.whatsapp.com/send?phone=237655027252" style="height:10% ; width:10%;" class="scrollToTop"><img src="{{asset('assets/images/com/WhatsApp-logo.png')}}" alt="image"></a>
+<br> <br>
+    {# <a href="#" class="scrollToTop"><img src="{{asset('assets/images/aeroplane.png')}}" alt="image"></a> #}
+
     {% block body %} 
     
     {% endblock %}
